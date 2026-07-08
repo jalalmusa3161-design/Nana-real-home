@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nana Real Home - Abuja</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:gold;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#ddd;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    margin-top:10px;
+    color:#ccc;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* ABOUT */
+.about{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.about h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+/* PROPERTIES */
+.properties{
+    padding:60px 20px;
+}
+
+.properties h2{
+    text-align:center;
+    color:gold;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    width:300px;
+    background:rgba(255,255,255,0.05);
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 10px;
+    color:#ccc;
+}
+
+.buttons{
+    padding:10px 15px 20px;
+}
+
+.buttons a{
+    display:inline-block;
+    margin:5px;
+    padding:8px 15px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* FORM */
+.form-section{
+    padding:70px 20px;
+    text-align:center;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    padding:12px 20px;
+    background:gold;
+    border:none;
+    font-weight:bold;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    padding:50px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    color:#aaa;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px;
+    border-radius:50%;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Nana Real Home</div>
+<nav>
+<a href="#">Home</a>
+<a href="#properties">Properties</a>
+<a href="#form">Book Inspection</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Luxury Homes & Lands in Abuja</h1>
+<p>Call / WhatsApp: 0813 859 7681</p>
+<a href="tel:08138597681" class="btn">Call Now</a>
+</div>
+</section>
+
+<section class="about">
+<h2>About Us</h2>
+<p>We provide trusted, verified and premium real estate properties in Abuja including Guzape, Maitama, Gwarimpa and Lokogoma.</p>
+</section>
+
+<section class="properties" id="properties">
+<h2>Available Properties</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+<h3>Luxury Duplex - Guzape</h3>
+<p>₦200,000,000</p>
+<div class="buttons">
+<a href="tel:08138597681">Call</a>
+<a href="https://wa.me/2348138597681">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+<h3>Modern Villa - Gwarimpa</h3>
+<p>₦150,000,000</p>
+<div class="buttons">
+<a href="tel:08138597681">Call</a>
+<a href="https://wa.me/2348138597681">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
+<h3>Land - Lokogoma</h3>
+<p>₦30,000,000</p>
+<div class="buttons">
+<a href="tel:08138597681">Call</a>
+<a href="https://wa.me/2348138597681">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6">
+<h3>5 Bedroom Duplex - Maitama</h3>
+<p>₦500,000,000</p>
+<div class="buttons">
+<a href="tel:08138597681">Call</a>
+<a href="https://wa.me/2348138597681">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<h3>Serviced Plot - Gwarimpa</h3>
+<p>₦50,000,000</p>
+<div class="buttons">
+<a href="tel:08138597681">Call</a>
+<a href="https://wa.me/2348138597681">WhatsApp</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="form-section" id="form">
+<h2>Book Inspection</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Your Phone Number" required>
+<textarea placeholder="Property you are interested in"></textarea>
+<button type="submit">Submit</button>
+</form>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact</h2>
+<p>📞 0813 859 7681</p>
+<p>📍 Abuja, Nigeria</p>
+</section>
+
+<footer>
+<p>© 2026 Nana Real Home. All rights reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/2348138597681">💬</a>
+
+</body>
+</html>
